@@ -1,10 +1,11 @@
 close all;
 clear;
 %% parameter settings
-path(path, './RPCA/exact_alm_rpca/exact_alm_rpca');
+addpath(genpath('./External'));
+addpath(genpath('./SACS_code'));
 
 imgpath = './images/single';%put any single images in this foledr
-mappath = './maps/single';
+mappath = './submaps/single';
 
 imglist = dir([imgpath '/*.bmp']); %bmp imgs only
 maplist = dir([mappath '/*.png']); 
@@ -21,12 +22,12 @@ for i=1:length(imglist),
     for j=1:map_num,
         Mset{1,j} = imread([mappath '/' inames{1} map_names{j}]);
     end; 
-    w = calWeight(map_names, inames, Mset, imgpath);
+    w = sacs_calWeight(map_names, inames, Mset, imgpath);
     saliency = zeros(size(Mset{1,1}));
     for j=1:map_num,
         saliency  = saliency + w(1,j)*double(Mset{1,j});
     end;
     raws = saliency;
     raws = normalize(raws);
-    imwrite(raws, ['rawresult/'  strrep(imglist(i).name, 'bmp' , 'png')] , 'png');
+    imwrite(raws, ['results/'  strrep(imglist(i).name, 'bmp' , 'png')] , 'png');
 end;

@@ -1,4 +1,4 @@
-function w = calWeight(map_names, img_names, Mset, imgpath)
+function w = sacs_calWeight(map_names, img_names, Mset, imgpath)
     img_num = length(img_names);
     map_num = length(map_names);
 
@@ -17,11 +17,7 @@ function w = calWeight(map_names, img_names, Mset, imgpath)
         img_B = double(img(:,:,3));
         
         %------------generate the superpixels-------------------%
-        comm=['SLICSuperpixelSegmentation' ' ' imname ' ' int2str(20) ' ' int2str(200) ' ' supdir];
-        system(comm); 
-        spname = [supdir img_names{i}  '.dat'];
-
-        superpixels=ReadDAT([m,n],spname); 
+        superpixels= SLIC_mex( img, 200, 20 );
         spnum = max(superpixels(:)); % the actual numbler of the superpixels
 
         avg = zeros(1,spnum);
