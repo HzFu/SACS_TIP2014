@@ -40,7 +40,7 @@ We examplify demo_mul.m to show how to use this code:
 
 1. Put a set of images in the folder 'images/multiple' for co-saliency detection.
 
-2. Generate the maps of various methods for the input images, and put the results in the folder 'maps/multiple'. 
+2. Generate the maps of various methods for the input images, and put the results in the folder 'submaps/multiple'. 
 Please note that, these results should be named as 'img_name + method_name', e.g., 'Christ_1_CO.png'.
 
 3. Run demo_mul.m for raw results.
