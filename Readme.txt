@@ -65,30 +65,23 @@ form the addresses listed below:
 
 MR: C. Yang, L. Zhang, H. Lu, X. Ruan, and M.-H. Yang, "Saliency detection via graph-based manifold ranking," 
 in CVPR, 2013, pp. 3166-3173. 
-http://ice.dlut.edu.cn/lu/Project/CVPR13[yangchuan]/cvprsaliency.htm
 
 HS: Q. Yan, L. Xu, J. Shi, and J. Jia, "Hierarchical saliency detection," in CVPR, 
 2013, pp. 1155-1162. 
-http://www.cse.cuhk.edu.hk/leojia/projects/hsaliency/
 
 RC,HC: M. Cheng, G. Zhang, N. J. Mitra, X. Huang, and S. Hu, "Global contrast based salient region detection," 
 in CVPR, 2011, pp. 409-416. 
-http://mmcheng.net/zh/salobj/
 
 SP,CO: H. Fu, X. Cao, and Z. Tu, "Cluster-based co-saliency detection," IEEE
 Trans. Image Process., vol. 22, no. 10, pp. 3766-3778 
-https://sites.google.com/site/huazhufu/
 
 CC,CP: H. Li and K. Ngan, "A co-saliency model of image pairs," IEEE Trans.Image Process., 
 vol. 20, no. 12, pp. 3365-3375, 2011. 
-http://ivipc.uestc.edu.cn/hlli/projects/cosaliency.html
 
 LR: X. Shen and Y. Wu, "A unified approach to salient object detection via
 low rank matrix recovery," in CVPR, 2012, pp. 853-860. 
-http://users.eecs.northwestern.edu/~xsh835/LowRankSaliency.html
 
 GB: J. Harel, C. Koch, and P. Perona, "Graph-based visual saliency," in NIPS.
 MIT Press, 2007, pp. 545-552. 
-http://www.klab.caltech.edu/~harel/share/gbvs.php
 
 Please also cited these works if you use their results or codes.
